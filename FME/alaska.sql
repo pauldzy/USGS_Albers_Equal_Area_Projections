@@ -1,0 +1,13 @@
+COORDINATE_SYSTEM_DEF NAD83_Alaska_Albers_Equal_Area_USGS \
+ DESC_NM "NAD83 Alaska Albers Equal Area USGS" \
+ PROJ AE \
+ UNIT METER \
+ DT_NAME NAD83 \
+ EL_NAME GRS1980 \
+ PARM1 55.0 \
+ PARM2 65.0 \
+ ORG_LAT 50.0 \
+ ORG_LNG -154 \
+ X_OFF 0.0 \
+ Y_OFF 0.0 \
+ MAP_SCL 1.0
