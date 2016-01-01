@@ -1,0 +1,13 @@
+COORDINATE_SYSTEM_DEF NAD83_Pacific_Trust_Albers_Equal_Area_USGS \
+ DESC_NM "NAD83 Pacific Trust Albers Equal Area USGS" \
+ PROJ AE \
+ UNIT METER \
+ DT_NAME NAD83 \
+ EL_NAME GRS1980 \
+ PARM1 8.0 \
+ PARM2 18.0 \
+ ORG_LAT 3.0 \
+ ORG_LNG 145 \
+ X_OFF 0.0 \
+ Y_OFF 0.0 \
+ MAP_SCL 1.0
