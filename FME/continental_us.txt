@@ -1,0 +1,13 @@
+COORDINATE_SYSTEM_DEF NAD83_Continental_US_Albers_Equal_Area_USGS \
+ DESC_NM "NAD83 Continental US Albers Equal Area USGS" \
+ PROJ AE \
+ UNIT METER \
+ DT_NAME NAD83 \
+ EL_NAME GRS1980 \
+ PARM1 29.5 \
+ PARM2 45.5 \
+ ORG_LAT 23.0 \
+ ORG_LNG -96 \
+ X_OFF 0.0 \
+ Y_OFF 0.0 \
+ MAP_SCL 1.0
