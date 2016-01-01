@@ -111,4 +111,4 @@ Adding a custom ArcGIS projection to your GIS installation is fairly easy and si
 Users may add custom projections to FME by [editing their MyCoordSysDefs.fme system file](http://docs.safe.com/fme/2013/html/FME_Workbench/Default.htm#About_Custom_Coordinate_Systems.htm). Afterwards restarting FME will allow users to work with all five projections.
 
 #####PostGIS
-The PostGIS coordinate reference system is located in your public.spatial_ref_sys table and as far as I can tell is a bit of free-for-all.  Custom SRIDs **should** be placed above 990000 but as long as the common EPSG is not in use, then it seems best to just use the common SRID value.  
+The PostGIS coordinate reference system is located in your public.spatial_ref_sys table and as far as I can tell is a bit of a free-for-all.  Custom SRIDs **should** be placed above 990000 but as long as the common EPSG is not in use, then it seems best to just use the common SRID value.  You will need superuser rights for the database in question.
