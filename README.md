@@ -1,7 +1,7 @@
 # USGS Albers Equal Area Projections
 The [United States Geological Survey] (http://www.usgs.gov) and other US federal agencies have provided data utilizing a set of Albers Equal Area Conic projections for decades (if you know the exact history of these projections or a good link, please drop me a line).  These projections are often associated with the USGS National Atlas from 1970 but have an even longer history before that.
 
-In any case, support for these projections in modern GIS systems has been slow to appear as only a few have ever been registered with the [EPSG registry](https://www.epsg-registry.org/).  This repository contains installation scripts and basic information on each projection for use in [Oracle Spatial] (http://www.oracle.com/us/products/database/options/spatial/overview/index.html), [PostGIS] (http://postgis.net/), [Esri ArcGIS] (https://www.arcgis.com/features/) and [Safe Software FME] (http://www.safe.com/fme/fme-desktop/index_b.php).  If you have scripts for other GIS systems please fork and submit a pull to me to add them.
+Support for these projections in modern GIS systems has been slow to appear as only a few have ever been registered with the [EPSG registry](https://www.epsg-registry.org/).  This repository contains installation scripts and basic information on each projection for use in [Oracle Spatial] (http://www.oracle.com/us/products/database/options/spatial/overview/index.html), [PostGIS] (http://postgis.net/), [Esri ArcGIS] (https://www.arcgis.com/features/) and [Safe Software FME] (http://www.safe.com/fme/fme-desktop/index_b.php).  If you have scripts for other GIS systems please fork and submit a pull to me to add them.
 
 ###Continental United States
 * Projection: Albers Equal Area
@@ -99,10 +99,10 @@ In any case, support for these projections in modern GIS systems has been slow t
 6. SpatialReference.org: None
 
 ##Installation
-Each GIS system has different requirements and instructions for installing a new coordinate reference system. Review the instructions below and then inspect the files located in the each subfolder of the repository. 
+Each GIS system has different requirements and instructions for installing a new coordinate reference system. Review the instructions below and then inspect the files located in each subfolder of the repository. 
 
 #####Oracle Spatial
-Adding a [custom Oracle Spatial CRS] (https://docs.oracle.com/database/121/SPATL/sdo_cs_concepts.htm#SPATL712) requires SYS privledges on the database in question.  All custom SRIDs and custom coordinate operation identifiers should be allocated to integers above 1000000.  Overwriting or adding SRIDs or coordinate operation identifiers below 1000000 may conflict with future Oracle upgrades or complicate your ability to obtain support for what should be stock SRIDs.  You will need to decide upon the custom SRID identifier and  custom coordinate op identifiers to use in your instances.  The default values here are 1000001 through 1000005 for both and may conflict with other custom identifiers you already have.  Make sure to verify these values are free on your instance and make any needed changes as necessary.
+Adding a [custom Oracle Spatial CRS] (https://docs.oracle.com/database/121/SPATL/sdo_cs_concepts.htm#SPATL712) requires SYS privledges on the database in question.  All custom SRIDs and custom coordinate operation identifiers should be allocated to integers above 1,000,000.  Overwriting or adding SRIDs or coordinate operation identifiers below 1,000,000 may conflict with future Oracle upgrades or complicate your ability to obtain support for what should be stock SRIDs.  You will need to decide upon the custom SRID identifier and  custom coordinate op identifiers to use in your instances.  The default values here are 1000001 through 1000005 for both and may conflict with other custom identifiers you already have.  Make sure to verify these values are free on your instance and make any needed changes as necessary.
 
 #####Esri ArcGIS
 Adding a custom ArcGIS projection to your GIS installation is fairly easy and simply requires the projection file (extension .prj) providing a unique text identifier for the projection.  From within ArcCatalog, simply right-click on the projection file and import the projection into your local ArcGIS installation.
